@@ -12,4 +12,8 @@
     .menu-active{
         display: flex !important;
     }
+    .slick-slide{
+        margin-left:  15px;
+        margin-right:  15px;
+      }
 }

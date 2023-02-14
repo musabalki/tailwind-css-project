@@ -433,6 +433,11 @@ body{
   display: flex !important;
 }
 
+.slick-slide{
+  margin-left:  15px;
+  margin-right:  15px;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -557,28 +562,24 @@ body{
   }
 }
 
+.visible{
+  visibility: visible !important;
+}
+
 .absolute{
   position: absolute !important;
 }
 
-.left-0{
-  left: 0px !important;
+.relative{
+  position: relative !important;
 }
 
 .top-20{
   top: 5rem !important;
 }
 
-.left-20{
-  left: 5rem !important;
-}
-
-.right-20{
-  right: 5rem !important;
-}
-
-.left-2{
-  left: 0.5rem !important;
+.left-0{
+  left: 0px !important;
 }
 
 .my-4{
@@ -599,11 +600,6 @@ body{
 .my-6{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
-}
-
-.mx-6{
-  margin-left: 1.5rem !important;
-  margin-right: 1.5rem !important;
 }
 
 .mb-10{
@@ -638,8 +634,8 @@ body{
   margin-top: 2.5rem !important;
 }
 
-.mt-2{
-  margin-top: 0.5rem !important;
+.inline-block{
+  display: inline-block !important;
 }
 
 .flex{
@@ -658,12 +654,16 @@ body{
   width: 100% !important;
 }
 
-.w-\[90\%\]{
-  width: 90% !important;
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .cursor-pointer{
   cursor: pointer !important;
+}
+
+.resize{
+  resize: both !important;
 }
 
 .list-disc{
@@ -700,12 +700,6 @@ body{
 
 .gap-10{
   gap: 2.5rem !important;
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0 !important;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse)) !important;
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse))) !important;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
@@ -770,11 +764,6 @@ body{
   background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-gray-400{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity)) !important;
-}
-
 .p-6{
   padding: 1.5rem !important;
 }
@@ -797,11 +786,6 @@ body{
 .py-1{
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
-}
-
-.px-2{
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
 }
 
 .pl-6{
@@ -868,13 +852,26 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
+.blur{
+  --tw-blur: blur(8px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 @media (min-width: 768px){
   .md\:relative{
     position: relative !important;
-  }
-
-  .md\:top-auto{
-    top: auto !important;
   }
 
   .md\:top-0{
@@ -901,10 +898,6 @@ body{
     flex-direction: row !important;
   }
 
-  .md\:flex-col{
-    flex-direction: column !important;
-  }
-
   .md\:gap-10{
     gap: 2.5rem !important;
   }
@@ -919,27 +912,19 @@ body{
     border-width: 0px !important;
   }
 
-  .md\:bg-inherit{
-    background-color: inherit !important;
-  }
-
-  .md\:bg-current{
-    background-color: currentColor !important;
-  }
-
   .md\:bg-white{
     --tw-bg-opacity: 1 !important;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
   }
 
-  .md\:px-10{
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-  }
-
   .md\:px-6{
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
   }
 
   .md\:text-3xl{
@@ -954,10 +939,6 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:hidden{
-    display: none !important;
-  }
-
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
