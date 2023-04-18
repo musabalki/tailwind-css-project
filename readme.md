@@ -5,3 +5,5 @@
 
 ### Detail
 <img src="detail.png" width="800"/>
+
+- New Page
