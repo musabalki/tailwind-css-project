@@ -590,6 +590,10 @@ body{
   grid-column: span 3 / span 3 !important;
 }
 
+.m-4{
+  margin: 1rem !important;
+}
+
 .my-6{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
@@ -655,12 +659,20 @@ body{
   margin-bottom: 1.25rem !important;
 }
 
+.ml-4{
+  margin-left: 1rem !important;
+}
+
 .inline-block{
   display: inline-block !important;
 }
 
 .flex{
   display: flex !important;
+}
+
+.inline-flex{
+  display: inline-flex !important;
 }
 
 .grid{
@@ -671,8 +683,24 @@ body{
   display: none !important;
 }
 
+.h-20{
+  height: 5rem !important;
+}
+
+.h-10{
+  height: 2.5rem !important;
+}
+
+.h-8{
+  height: 2rem !important;
+}
+
 .w-full{
   width: 100% !important;
+}
+
+.w-8{
+  width: 2rem !important;
 }
 
 .transform{
@@ -777,23 +805,22 @@ body{
   background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-indigo-300{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(165 180 252 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-indigo-400{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(129 140 248 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-gray-300{
+.bg-gray-50{
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
 }
 
 .p-6{
   padding: 1.5rem !important;
+}
+
+.p-4{
+  padding: 1rem !important;
 }
 
 .px-6{
@@ -824,6 +851,16 @@ body{
 .py-3{
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
+}
+
+.px-2{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.px-4{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .pt-10{
