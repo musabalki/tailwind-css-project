@@ -566,6 +566,10 @@ body{
   visibility: visible !important;
 }
 
+.invisible{
+  visibility: hidden !important;
+}
+
 .absolute{
   position: absolute !important;
 }
@@ -584,6 +588,10 @@ body{
 
 .left-0{
   left: 0px !important;
+}
+
+.top-0{
+  top: 0px !important;
 }
 
 .col-span-9{
@@ -719,6 +727,10 @@ body{
 
 .h-8{
   height: 2rem !important;
+}
+
+.h-full{
+  height: 100% !important;
 }
 
 .w-\[200px\]{
@@ -892,6 +904,16 @@ body{
 .bg-indigo-400{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(129 140 248 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity)) !important;
 }
 
 .object-cover{
@@ -1094,9 +1116,33 @@ body{
   transition-duration: 150ms !important;
 }
 
+.hover\:bg-slate-200:hover{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity)) !important;
+}
+
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:blur-sm:hover{
+  --tw-blur: blur(4px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.group\/item:hover .group-hover\/item\:visible{
+  visibility: visible !important;
+}
+
+.group\/item:hover .group-hover\/item\:blur-sm{
+  --tw-blur: blur(4px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+.group\/item2:hover .group-hover\/item2\:blur-sm{
+  --tw-blur: blur(4px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 @media (prefers-color-scheme: dark){
